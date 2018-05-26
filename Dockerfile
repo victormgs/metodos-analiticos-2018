@@ -1,4 +1,4 @@
-FROM rocker/verse:3.4.3
+FROM rocker/verse
 
 RUN r -e 'devtools::install_github("rstudio/sparklyr")'
 RUN r -e 'sparklyr::spark_install()'
